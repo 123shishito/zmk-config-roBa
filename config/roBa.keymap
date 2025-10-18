@@ -61,7 +61,20 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
+        };
+        encoder_ccw: encoder_ccw {
+            compatible = "zmk,behavior-encoder-rotate";
+            label = "ENCODER_CCW";
+            bindings = <&kp VOLUME_DOWN>;
+            steps = <2>;
+        };
+
+        encoder_cw: encoder_cw {
+            compatible = "zmk,behavior-encoder-rotate";
+            label = "ENCODER_CW";
+            bindings = <&kp VOLUME_UP>;
+            steps = <2>;
         };
     };
 
@@ -76,7 +89,7 @@
 &mt LCTRL TAB     &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANGUAGE_2  &lt 2 SPACE  &mt LEFT_ALT LANG1      &kp BACKSPACE  &lt 3 ENTER                               &tog 2
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PG_UP)>;
         };
 
         NUM {
