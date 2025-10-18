@@ -67,14 +67,14 @@
             compatible = "zmk,behavior-encoder-rotate";
             label = "ENCODER_CCW";
             bindings = <&kp PAGE_DOWN>;
-            steps = <4>;
+            steps = <16>;
         };
 
         encoder_cw: encoder_cw {
             compatible = "zmk,behavior-encoder-rotate";
             label = "ENCODER_CW";
             bindings = <&kp PG_UP>;
-            steps = <4>;
+            steps = <16>;
         };
     };
 
