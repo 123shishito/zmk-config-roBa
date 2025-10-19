@@ -90,19 +90,19 @@
 
         MOUSE {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
-&kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &kp LC(LA(LG(NUMBER_2)))
-&kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &trans            &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
-&trans  &trans   &trans   &trans   &trans                &trans      &kp DEL  &trans                                                                &trans
+&trans  &trans  &trans  &trans  &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
+&trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &kp LC(LA(LG(NUMBER_2)))
+&trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &trans            &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
+&trans  &trans  &trans  &trans  &trans                &trans      &kp DEL  &trans                                                                &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans                &trans                &trans                &trans                &trans                                    &trans  &kp HOME        &kp UP_ARROW    &kp END           &trans
-&kp LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
-&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans  &kp LC(LG(T))   &trans          &kp LEFT_CONTROL  &trans
-&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                    &trans
+&kp LG(LC(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))                      &trans  &kp HOME         &kp UP_ARROW    &kp END           &trans
+&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
+&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans  &kp LC(LG(TAB))  &trans          &kp LEFT_CONTROL  &trans
+&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                     &trans
             >;
         };
     };
