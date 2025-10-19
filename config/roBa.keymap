@@ -92,7 +92,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
 &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &kp LC(LA(LG(NUMBER_2)))
-&trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &trans            &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
+&trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
 &trans  &trans  &trans  &trans  &trans                &trans      &kp DEL  &trans                                                                &trans
             >;
         };
