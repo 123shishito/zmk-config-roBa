@@ -43,6 +43,11 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <42 2>;
         };
+
+        mouse {
+            bindings = <&tog 2>;
+            key-positions = <33 40>;
+        };
     };
 
     macros {
