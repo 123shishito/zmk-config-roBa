@@ -81,7 +81,7 @@
 &mt LCTRL TAB     &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANGUAGE_2  &lt 2 SPACE  &mt LEFT_ALT LANG1      &kp BACKSPACE  &lt 3 ENTER                               &kp GRAVE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PG_UP)>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         NUM {
@@ -109,6 +109,8 @@
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
         };
     };
 };
