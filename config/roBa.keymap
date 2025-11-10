@@ -46,7 +46,12 @@
 
         mouse {
             bindings = <&tog 2>;
-            key-positions = <40 42>;
+            key-positions = <40 33>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
         };
     };
 
