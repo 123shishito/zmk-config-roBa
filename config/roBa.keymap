@@ -48,6 +48,11 @@
             bindings = <&tog 2>;
             key-positions = <40 33>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
