@@ -91,19 +91,19 @@
 
         NUM {
             bindings = <
-&kp EXCLAMATION            &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp NON_US_BACKSLASH  &kp PIPE
-&mt LEFT_CONTROL NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &kp PLUS   &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
-&trans                     &trans        &trans        &trans        &trans        &trans      &kp EQUAL  &trans        &trans         &trans        &trans                &trans
-&trans                     &trans        &trans        &trans        &trans        &trans      &trans     &trans                                                           &trans
+&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp NON_US_BACKSLASH  &kp PIPE
+&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &kp PLUS   &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
+&trans           &trans        &trans        &trans        &trans        &trans      &kp EQUAL  &trans        &trans         &trans        &trans                &trans
+&trans           &trans        &trans        &trans        &trans        &trans      &trans     &trans                                                           &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
-&kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &mt RIGHT_CONTROL LA(LC(LG(NUMBER_2)))
-&kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &mt RIGHT_SHIFT LA(LC(LG(NUMBER_3)))
-&trans  &trans   &trans   &trans   &trans                &trans      &kp DEL  &trans                                                                &trans
+&kp F1               &kp F2   &kp F3   &kp F4   &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
+&mt LEFT_CONTROL F5  &kp F6   &kp F7   &kp F8   &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &mt RIGHT_CONTROL LA(LC(LG(NUMBER_2)))
+&mt LEFT_SHIFT F9    &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &mt RIGHT_SHIFT LA(LC(LG(NUMBER_3)))
+&trans               &trans   &trans   &trans   &trans                &trans      &kp DEL  &trans                                                                &trans
             >;
         };
 
