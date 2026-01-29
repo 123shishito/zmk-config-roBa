@@ -48,11 +48,6 @@
             bindings = <&tog 2>;
             key-positions = <40 33>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <19 20>;
-        };
     };
 
     macros {
@@ -116,15 +111,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
         };
     };
 };
