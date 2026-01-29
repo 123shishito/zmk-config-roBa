@@ -48,6 +48,11 @@
             bindings = <&tog 2>;
             key-positions = <40 33>;
         };
+
+        click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
