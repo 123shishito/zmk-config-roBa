@@ -114,6 +114,8 @@
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
     };
 };
