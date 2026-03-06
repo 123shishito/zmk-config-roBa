@@ -46,32 +46,33 @@
         };
     };
 
-//    macros {
-//        to_layer_0: to_layer_0 {
-//            compatible = "zmk,behavior-macro-one-param";
-//            #binding-cells = <1>;
-//            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-//            label = "TO_LAYER_0";
-//        };
-//    };
+    //    macros {
+    //        to_layer_0: to_layer_0 {
+    //            compatible = "zmk,behavior-macro-one-param";
+    //            #binding-cells = <1>;
+    //            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+    //            label = "TO_LAYER_0";
+    //        };
+    //    };
 
     behaviors {
-            encoder_msc_down_up: encoder_msc_down_up {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
-//        lt_to_layer_0: lt_to_layer_0 {
-//            compatible = "zmk,behavior-hold-tap";
-//            label = "LAYER_TAP_TO_0";
-//            bindings = <&mo>, <&to_layer_0>;
-//
-//            #binding-cells = <2>;
-//            tapping-term-ms = <200>;
-//        };
+        //        lt_to_layer_0: lt_to_layer_0 {
+        //            compatible = "zmk,behavior-hold-tap";
+        //            label = "LAYER_TAP_TO_0";
+        //            bindings = <&mo>, <&to_layer_0>;
+        //
+        //            #binding-cells = <2>;
+        //            tapping-term-ms = <200>;
+        //        };
     };
 
     keymap {
@@ -95,24 +96,30 @@
 &trans                     &trans        &trans        &trans        &trans        &trans      &kp EQUAL  &trans        &trans         &trans        &trans                &trans
 &trans                     &trans        &trans        &trans        &trans        &trans      &trans     &trans                                                           &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
             bindings = <
 &kp F1               &kp F2   &kp F3   &kp F4   &trans                                     &trans                 &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LC(LA(LG(NUMBER_1)))
-&mt LEFT_CONTROL F5  &kp F6   &kp F7   &kp F8   &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &mt (RIGHT_CONTROL) LA(LC(LG(NUMBER_2)))
-&mt LEFT_SHIFT F9    &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &mt (RIGHT_SHIFT) LA(LC(LG(NUMBER_3)))
+&mt LEFT_CONTROL F5  &kp F6   &kp F7   &kp F8   &kp LEFT_PARENTHESIS  &trans      &trans   &kp RIGHT_PARENTHESIS  &mkp MB1          &mkp MB2  &trans             &mt RIGHT_CONTROL LA(LC(LG(NUMBER_2)))
+&mt LEFT_SHIFT F9    &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &mt RIGHT_SHIFT LA(LC(LG(NUMBER_3)))
 &trans               &trans   &trans   &trans   &trans                &trans      &kp DEL  &trans                                                                &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
             bindings = <
-&trans                               &trans                &trans                &trans                &trans                                    &trans         &kp HOME        &kp UP_ARROW    &kp END           &trans
-&mt (LEFT_CONTROL) LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
-&trans                               &trans                &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
-&trans                               &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
+&trans                             &trans                &trans                &trans                &trans                                    &trans         &kp HOME        &kp UP_ARROW    &kp END           &trans
+&mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
+&trans                             &trans                &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
+&trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
