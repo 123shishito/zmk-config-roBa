@@ -96,8 +96,6 @@
 &trans                     &trans        &trans        &trans        &trans        &trans      &kp EQUAL  &trans        &trans         &trans        &trans                &trans
 &trans                     &trans        &trans        &trans        &trans        &trans      &trans     &trans                                                           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -107,8 +105,6 @@
 &mt LEFT_SHIFT F9    &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans      &trans   &kp RIGHT_BRACKET      &kp LG(TAB)       &trans    &trans             &mt RIGHT_SHIFT LA(LC(LG(NUMBER_3)))
 &trans               &trans   &trans   &trans   &trans                &trans      &kp DEL  &trans                                                                &trans
             >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -118,8 +114,6 @@
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
