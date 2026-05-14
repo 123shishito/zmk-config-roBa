@@ -72,6 +72,7 @@
                 , <&macro_tap &kp M &kp S &kp P &kp A &kp I &kp N &kp T> // 1文字ずつ確実に叩かせる方式
                 , <&macro_wait_time 100>
                 , <&macro_tap &kp ENTER>
+                ;
         };
     };
 
