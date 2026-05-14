@@ -110,7 +110,7 @@ macros {
                 , <&macro_tap &kp ENTER>
                 ;
         };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
