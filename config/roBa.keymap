@@ -74,8 +74,8 @@
                 <&macro_tap>,
                 <&kp LANG2>,
                 <&macro_tap>,
-                <&macro_param_wait_time 5>, // 文字間のウェイトを5msに変更
-                <&macro_param_tap_time 5>,  // キーの押し下げ時間を5msに変更
+                <&macro_wait_time 5>, // 文字間のウェイトを5msに変更
+                <&macro_tap_time 5>,  // キーの押し下げ時間を5msに変更
                 <&kp M &kp S &kp P &kp A &kp I &kp N &kp T>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
