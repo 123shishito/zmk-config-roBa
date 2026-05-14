@@ -75,40 +75,53 @@
         //        };
     };
 
-macros {
+    macros {
         // 改良版：メモ帳起動マクロ
+
         open_notepad: open_notepad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 300>  // 検索画面が出るのをしっかり待つ
-                , <&macro_tap &kp LANG2>   // WindowsでIMEを強制オフ（英数入力化）
-                , <&macro_tap &kp N &kp O &kp T &kp E &kp P &kp A &kp D>
-                , <&macro_wait_time 100>
-                , <&macro_tap &kp ENTER>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 300>,
+                <&macro_tap>,
+                <&kp LANG2>,
+                <&macro_tap>,
+                <&kp N &kp O &kp T &kp E &kp P &kp A &kp D>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp ENTER>;
         };
+
         // 改良版：ペイント起動マクロ
+
         open_paint: open_paint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 300>
-                , <&macro_tap &kp LANG2>  // WindowsでIMEを強制オフ（英数入力化）
-                , <&macro_tap &kp M &kp S &kp P &kp A &kp I &kp N &kp T>
-                , <&macro_wait_time 100>
-                , <&macro_tap &kp ENTER>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 300>,
+                <&macro_tap>,
+                <&kp LANG2>,
+                <&macro_tap>,
+                <&kp M &kp S &kp P &kp A &kp I &kp N &kp T>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp ENTER>;
         };
     };
 
@@ -150,7 +163,7 @@ macros {
             bindings = <
 &trans                             &trans                &trans                &trans                &trans                                    &trans         &kp HOME        &kp UP_ARROW    &kp END           &trans
 &mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
-&kp C_AL_CALC                      &open_notepad         &open_paint           &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
+&kp K_CALC                         &open_notepad         &open_paint           &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
 
