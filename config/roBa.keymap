@@ -75,7 +75,6 @@
         //        };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -114,7 +113,7 @@
             bindings = <
 &trans                             &trans                &trans                &trans                &trans                                    &trans         &kp HOME        &kp UP_ARROW    &kp END           &trans
 &mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
-&kp K_CALC                         &open_notepad         &open_paint           &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
+&kp K_CALC                         &kp C_AL_WORD         &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
 
