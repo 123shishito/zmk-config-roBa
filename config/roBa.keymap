@@ -88,7 +88,7 @@ macros {
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 300>  // 検索画面が出るのをしっかり待つ
                 , <&macro_tap &kp LANG2>   // WindowsでIMEを強制オフ（英数入力化）
-                , <&macro_type "notepad">  // ダブルクォーテーションで文字列指定
+                , <&macro_tap &kp N &kp O &kp T &kp E &kp P &kp A &kp D>
                 , <&macro_wait_time 100>
                 , <&macro_tap &kp ENTER>
                 ;
@@ -105,7 +105,7 @@ macros {
                 , <&macro_release &kp LGUI>
                 , <&macro_wait_time 300>
                 , <&macro_tap &kp LANG2>  // WindowsでIMEを強制オフ（英数入力化）
-                , <&macro_type "mspaint">  // 単数形 ＋ ダブルクォーテーションで文字列指定
+                , <&macro_tap &kp M &kp S &kp P &kp A &kp I &kp N &kp T>
                 , <&macro_wait_time 100>
                 , <&macro_tap &kp ENTER>
                 ;
