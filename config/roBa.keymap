@@ -74,8 +74,8 @@
                 <&macro_tap>,
                 <&kp LANG2>,
                 <&macro_tap>,
-                <&macro_wait_time 3>, // 文字間のウェイトを5msに変更
-                <&macro_tap_time 3>,  // キーの押し下げ時間を5msに変更
+                <&macro_wait_time 3>,
+                <&macro_tap_time 3>,
                 <&kp M &kp S &kp P &kp A &kp I &kp N &kp T>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
@@ -141,7 +141,7 @@
             bindings = <
 &trans                             &trans                &trans                &trans                &trans                                    &trans         &kp HOME        &kp UP_ARROW    &kp END           &trans
 &mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(NUMBER_5))  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
-&kp C_AL_CALC                      &open_paint           &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LG(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &trans
+&mt LEFT_SHIFT C_AL_CALCULATOR     &open_paint           &trans                &trans                &trans                &trans      &trans  &kp PAGE_DOWN  &kp LA(TAB)     &kp LG(T)       &kp LEFT_CONTROL  &kp RIGHT_SHIFT
 &trans                             &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                           &trans
             >;
 
