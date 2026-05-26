@@ -135,7 +135,7 @@
             bindings = <
 &trans                             &trans                &trans                &trans                &trans                               &trans  &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LA(LC(LG(NUMBER_1)))
 &mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))  &trans      &trans   &trans  &mkp MB1          &mkp MB2  &trans             &kp LA(LC(LG(NUMBER_2)))
-&mt LEFT_SHIFT C_AL_CALC           &open_paint           &trans                &trans                &trans          &trans      &trans   &trans  &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
+&mt LEFT_SHIFT C_AL_CALCULATOR     &open_paint           &trans                &trans                &trans          &trans      &trans   &trans  &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
 &trans                             &trans                &trans                &trans                &trans          &trans      &kp DEL  &trans                                                 &kp LA(LC(LG(NUMBER_4)))
             >;
 
