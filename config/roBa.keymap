@@ -49,6 +49,11 @@
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
+
+        M_click {
+            bindings = <&mkp MB3>;
+            key-positions = <7 8>;
+        };
     };
 
     //    macros {
