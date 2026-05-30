@@ -80,13 +80,37 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp LANG2>,
                 <&macro_tap>,
                 <&macro_wait_time 3>,
                 <&macro_tap_time 3>,
                 <&kp M &kp S &kp P &kp A &kp I &kp N &kp T>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp ENTER>;
+        };
+
+        open_memo: open_memo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <15>;
+            tap-ms = <15>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp LANG2>,
+                <&macro_tap>,
+                <&macro_wait_time 3>,
+                <&macro_tap_time 3>,
+                <&kp N &kp O &kp T &kp E &kp P &kp A &kp D>,
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp ENTER>;
@@ -140,7 +164,7 @@
             bindings = <
 &trans                             &trans                &trans                &trans                &trans                                   &trans  &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LA(LC(LG(NUMBER_1)))
 &mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))  &kp K_MUTE      &trans   &trans  &mkp MB1          &mkp MB2  &kp LA(L)          &kp LA(LC(LG(NUMBER_2)))
-&mt LEFT_SHIFT C_AL_CALCULATOR     &open_paint           &trans                &trans                &trans          &trans          &trans   &trans  &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
+&mt LEFT_SHIFT C_AL_CALCULATOR     &open_paint           &open_memo            &trans                &trans          &trans          &trans   &trans  &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
 &trans                             &trans                &trans                &trans                &trans          &trans          &kp DEL  &trans                                                 &kp LA(LC(LG(NUMBER_4)))
             >;
 
