@@ -66,7 +66,6 @@
     //    };
 
     macros {
-
         open_paint: open_paint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -113,6 +112,21 @@
                 <&macro_wait_time 50>,
                 <&macro_tap>,
                 <&kp ENTER>;
+        };
+
+        alt_l: alt_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            wait-ms = <15>;
+            tap-ms = <15>;
         };
     };
 
@@ -161,9 +175,9 @@
 
         MOUSE {
             bindings = <
-&trans                             &trans                &trans                &trans                &trans                                   &trans  &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LA(LC(LG(NUMBER_1)))
-&mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))  &kp K_MUTE      &trans   &trans  &mkp MB1          &mkp MB2  &kp LA(L)          &kp LA(LC(LG(NUMBER_2)))
-&mt LEFT_SHIFT C_AL_CALCULATOR     &open_paint           &open_memo            &trans                &trans          &trans          &trans   &trans  &kp LG(TAB)       &trans    &trans             &kp LA(LC(LG(NUMBER_3)))
+&trans                             &open_paint           &open_memo            &trans                &trans                                   &trans  &kp LC(LG(LEFT))  &mkp MB3  &kp LC(LG(RIGHT))  &kp LA(LC(LG(NUMBER_1)))
+&mt LEFT_CONTROL LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))  &kp K_MUTE      &trans   &trans  &mkp MB1          &mkp MB2  &alt_l             &kp LA(LC(LG(NUMBER_2)))
+&trans                             &trans                &trans                &trans                &trans          &trans          &trans   &trans  &kp LG(TAB)       &trans    &kp RCTRL          &kp LA(LC(LG(NUMBER_3)))
 &trans                             &trans                &trans                &trans                &trans          &trans          &kp DEL  &trans                                                 &kp LA(LC(LG(NUMBER_4)))
             >;
 
