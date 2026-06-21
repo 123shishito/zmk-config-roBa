@@ -128,6 +128,22 @@
             wait-ms = <15>;
             tap-ms = <15>;
         };
+
+        alt_Escape: alt_Escape {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            wait-ms = <15>;
+            tap-ms = <15>;
+            label = "ALT_ESCAPE";
+        };
     };
 
     behaviors {
@@ -187,9 +203,9 @@
         SCROLL {
             bindings = <
 &kp F1               &kp F2   &kp F3  &kp F4  &kp F5                       &trans         &kp HOME         &kp UP_ARROW    &kp END           &trans
-&mt LEFT_CONTROL F6  &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW   &mt RIGHT_ALT LA(ESCAPE)
+&mt LEFT_CONTROL F6  &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp RIGHT_ALT
 &mt LEFT_SHIFT F11   &kp F12  &trans  &trans  &trans   &trans      &trans  &kp PAGE_DOWN  &kp LA(LC(TAB))  &kp LG(T)       &kp LEFT_CONTROL  &kp RIGHT_SHIFT
-&trans               &trans   &trans  &trans  &trans   &trans      &trans  &trans                                                            &trans
+&trans               &trans   &trans  &trans  &trans   &trans      &trans  &trans                                                            &alt_Escape
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
