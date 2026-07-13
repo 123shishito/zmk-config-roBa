@@ -59,6 +59,11 @@
             bindings = <&alt_Escape>;
             key-positions = <21 20>;
         };
+
+        BT_CLR {
+            bindings = <&bt BT_CLR>;
+            key-positions = <42 27>;
+        };
     };
 
     //    macros {
