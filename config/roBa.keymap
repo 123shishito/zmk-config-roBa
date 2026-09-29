@@ -57,7 +57,7 @@
 
         alt_escape {
             bindings = <&alt_Escape>;
-            key-positions = <21 20>;
+            key-positions = <30 31>;
         };
 
         BT_clr_all {
